@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Modern Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- AOS Library for scroll animations -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+<!-- Swiper JS -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+</head>
+<body class="font-sans bg-gray-100">
+
+    <header class="bg-blue-200 text-blue-800 p-4">
+        <div class="container mx-auto flex flex-col items-center">
+          <div class="rounded-full overflow-hidden border-4 border-blue-800 mb-4">
+            <img src="./me.jpg" alt="Your Profile Image" class="w-20 h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-cover">
+          </div>
+          <h1 class="text-3xl md:text-4xl lg:text-5xl font-bold text-blue-800 text-center">Ramachandra Uudpa</h1>
+          <p class="text-sm md:text-base font-light text-blue-800 text-center mb-4">Developer &amp; Designer</p>
+          <div class="flex mt-4 space-x-4">
+            <a href="https://twitter.com/Ramachandr1055" class="text-blue-800 hover:text-gray-300 transition duration-300">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ramachandra-udupa" class="text-blue-800 hover:text-gray-300 transition duration-300">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/Ramachandra-2096" class="text-blue-800 hover:text-gray-300 transition duration-300">
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </div>
+      </header>
+      
+  
+  <!-- Navigation -->
+<nav class="bg-blue-200 text-blue-800 p-4 text-1xl">
+    <div class="container mx-auto flex justify-between items-center flex-row-reverse">
+      <ul class="flex space-x-4">
+        <li data-aos="fade-up" data-aos-delay="100"><a href="#home" class="nav-link">Home</a></li>
+        <li data-aos="fade-up" data-aos-delay="200"><a href="#about" class="nav-link">About</a></li>
+        <li data-aos="fade-up" data-aos-delay="300"><a href="#portfolio" class="nav-link">Projects</a></li>
+        <li data-aos="fade-up" data-aos-delay="400"><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  
+
+
+  <!-- Home Section with Parallax -->
+  <section id="home" class="relative h-screen flex items-center justify-center" data-aos="fade">
+    <div class="absolute inset-0 bg-cover bg-center z-[-1]" style="background-image: url('parallax-background.jpg');"></div>
+    <div class="text-center z-10">
+      <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-4" data-aos="fade-up" data-aos-duration="1000">Welcome to My Portfolio</h2>
+      <p class="text-lg md:text-xl lg:text-2xl text-gray-300" data-aos="fade-up" data-aos-duration="1200">Developer &amp; Designer</p>
+    </div>
+  </section>
+
+<!-- About Section -->
+<section id="about" class="py-16" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-4 text-purple-800">About Me</h2>
+      <p class="text-gray-700 md:w-2/3 mx-auto leading-relaxed">
+        Hi, I'm <span class="font-bold text-purple-800">Ramachandra Udupa</span>, a computer science enthusiast and developer. My journey in computing started with a fascination for algorithms and has evolved into exploring various domains. I thrive on challenges, love to explore new technologies, and bring creativity to every project.
+      </p>
+      <p class="text-gray-700 md:w-2/3 mx-auto mt-4 leading-relaxed">
+        Whether delving into data structures, building software solutions, or exploring artificial intelligence, I find joy in continuous learning. As a student, I offer a fresh perspective, and as a developer, I bring dedication and innovation to every endeavor.
+      </p>
+      <p class="text-gray-700 md:w-2/3 mx-auto mt-4 leading-relaxed">
+        I believe in the power of collaboration and knowledge sharing. Beyond coding, you'll find me participating in coding communities, hackathons, and exploring technology's intersections with other fields. Let's connect and create something amazing together!
+      </p>
+    </div>
+  </section>
+  
+  
+<!-- Portfolio Section -->
+<section id="portfolio" class="py-16" data-aos="fade-up">
+    <div class="container mx-auto text-center">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8">Projects</h2>
+      <!-- Swiper Container -->
+      <div class="swiper-container overflow-hidden">
+        <div class="swiper-wrapper">
+          <!-- Portfolio items go here -->
+          <div class="swiper-slide bg-white p-8 rounded-lg shadow-md transform rotate-z-3 transition duration-300 hover:rotate-z-0 hover:shadow-lg">
+            <img src="./todo.png" alt="Portfolio Item 1" class="mb-6 rounded-md mx-auto object-cover h-80"> <!-- Set a fixed height (e.g., h-40) -->
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2">Todo list</h3>
+            <p class="text-gray-600">Simple todo list in Django <a class="text-blue-600" href="www.google.com" target="_blank">click here for preview</a></p>
+          </div>
+          <div class="swiper-slide bg-white p-8 rounded-lg shadow-md transform -rotate-z-2 transition duration-300 hover:rotate-z-0 hover:shadow-lg">
+            <img src="./website creation.png" alt="Portfolio Item 2" class="mb-6 rounded-md mx-auto object-cover h-80"> <!-- Set a fixed height (e.g., h-40) -->
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2">Website creation</h3>
+            <p class="text-gray-600">It is a project, by providing with a text file with details of students it will generate personalized website for every student. <a class="text-blue-600" href="www.google.com" target="_blank">click here for preview</a></p>
+          </div>
+          <div class="swiper-slide bg-white p-8 rounded-lg shadow-md transform rotate-z-3 transition duration-300 hover:rotate-z-0 hover:shadow-lg">
+            <img src="./chatroom.png" alt="Portfolio Item 3" class="mb-6 rounded-md mx-auto object-cover h-80"> <!-- Set a fixed height (e.g., h-40) -->
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2">Chat room</h3>
+            <p class="text-gray-600">Simple chat room Using Django and Sqlite3.<a class="text-blue-600" href="www.google.com" target="_blank">click here for preview</a> </p>
+          </div>
+          <div class="swiper-slide bg-white p-8 rounded-lg shadow-md transform rotate-z-3 transition duration-300 hover:rotate-z-0 hover:shadow-lg">
+            <img src="./wordgame.png" alt="Portfolio Item 3" class="mb-6 rounded-md mx-auto object-cover h-80"> <!-- Set a fixed height (e.g., h-40) -->
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2">Word Game</h3>
+            <p class="text-gray-600"> Word Game Using Django and Sqlite3. Where user has to entre a word and depending on the last letter of entered word the computer will generate a word and user has to enter a word which is staring from las letter of computer generated word. This will continue till one of them is out of word or has taken more than 30 sec time to entre next word <a class="text-blue-600" href="www.google.com" target="_blank">click here for preview</a> </p>
+          </div>
+          <div class="swiper-slide bg-white p-8 rounded-lg shadow-md transform rotate-z-3 transition duration-300 hover:rotate-z-0 hover:shadow-lg">
+            <img src="./infinity.png" alt="Portfolio Item 3" class="mb-6 rounded-md mx-auto object-cover h-80"> <!-- Set a fixed height (e.g., h-40) -->
+            <h3 class="text-xl md:text-2xl lg:text-3xl font-semibold mb-2">Infinity</h3>
+            <p class="text-gray-600">A web site for Remote working management. Implemented basic functionality of google meet, Linkedin and Github and added a method to track company project completion. <a class="text-blue-600" href="www.google.com" target="_blank">click here for preview</a> </p>
+          </div>
+        </div>
+        <!-- Add Navigation -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 4000, // Auto-rotate every 4 seconds
+      },
+      grabCursor: true,
+    });
+  </script>
+  
+  
+
+ <!-- Add this line to include FontAwesome CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-pzXN8VfN1TTOHeBPwS3reA72ZwXH3AAJBlTE6p5cO1BZSVM+9dODZRF62Z0FlIhKF2qLzBm0ZzbLq6NpgKu3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<!-- Contact Section -->
+<section id="contact" class="py-2 bg-gray-100 relative" data-aos="fade-up">
+  <div class="container mx-auto">
+    <div class="bg-white p-8 rounded-lg shadow-lg">
+      <h2 class="text-3xl md:text-4xl lg:text-5xl font-semibold mb-8 text-gray-800">Get in Touch</h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-gray-700 text-left relative z-10">
+        <div class="flex items-center mb-4">
+          <i class="fas fa-envelope text-blue-500 mr-2"></i>
+          <p class="inline-block">
+            Feel free to reach out to me at <a href="mailto:ramachandraudupa2004@gmail.com" class="text-blue-500 hover:underline transition duration-300">ramachandraudupa2004@gmail.com</a>
+          </p>
+        </div>
+
+        <div class="flex items-center mb-4">
+          <i class="fab fa-linkedin text-blue-500 mr-2"></i>
+          <p class="inline-block">
+            Connect with me on <a href="https://www.linkedin.com/in/ramachandra-udupa" class="text-blue-500 hover:underline transition duration-300">LinkedIn</a>
+          </p>
+        </div>
+
+        <div class="flex items-center mb-4">
+          <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+          <p class="inline-block">
+            Location: #2/92 Pandeshwara village, Sastana post, Brahamava taluk, Udupi district, Karnataka, India 576226
+          </p>
+        </div>
+
+        <div class="flex items-center mb-4">
+          <i class="fas fa-phone-alt text-blue-500 mr-2"></i>
+          <p class="inline-block">
+            Phone: <a href="tel://+919483924280" class="text-blue-500 hover:underline transition duration-300">+91 9483924280</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Decorative Shapes -->
+  <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-gray-100 via-gray-200 to-transparent z-0"></div>
+</section>
+
+<!-- AOS Initialization -->
+<script>
+  AOS.init({
+    duration: 800,
+    once: true, // Animation only once
+  });
+</script>
+
+
+<!-- Footer -->
+<footer class="bg-gradient-to-t from-gray-900 to-gray-800 text-white py-12">
+    <div class="container mx-auto text-center">
+      <p class="text-lg mb-4">&copy; 2023 Ramachandra Udupa. All rights reserved.</p>
+      <div class="flex items-center justify-center space-x-6">
+        <a href="https://twitter.com/Ramachandr1055" class="text-blue-500 hover:text-blue-300 transition duration-300">
+          <i class="fab fa-twitter text-2xl"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ramachandra-udupa" class="text-blue-500 hover:text-blue-300 transition duration-300">
+          <i class="fab fa-linkedin-in text-2xl"></i>
+        </a>
+        <a href="https://github.com/Ramachandra-2096" class="text-blue-500 hover:text-blue-300 transition duration-300">
+          <i class="fab fa-github text-2xl"></i>
+        </a>
+      </div>
+      <p class="mt-6 text-sm opacity-75">Connect with me on social media for more updates and projects.</p>
+    </div>
+  </footer>
+  
+  <!-- Add this line to include FontAwesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-pzXN8VfN1TTOHeBPwS3reA72ZwXH3AAJBlTE6p5cO1BZSVM+9dODZRF62Z0FlIhKF2qLzBm0ZzbLq6NpgKu3RQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />  
+
+  <!-- Optional: Add your JavaScript for text animation or other effects here -->
+  <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>

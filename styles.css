@@ -1,0 +1,53 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  /* Navigation styles */
+  .nav-container {
+    background: linear-gradient(to right, #8B5CF6, #4F46E5);
+    color: #ffffff;
+    padding: 1rem;
+  }
+  
+  .nav-container ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover {
+    color: #A78BFA;
+  }
+  
+  /* AOS Animations */
+  [data-aos] {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+  
+  [data-aos].aos-animate {
+    opacity: 1;
+  }
+  /* Add transitions to the About section */
+#about {
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  /* Initial opacity for fade-in effect */
+  #about:not(.aos-animate) {
+    opacity: 0;
+  }
+  
