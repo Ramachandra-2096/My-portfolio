@@ -130,23 +130,31 @@
     </div>
   </section>
   <script>
-    var swiper = new Swiper('.swiper-container', {
-      slidesPerView: 2,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      autoplay: {
-        delay: 16000, // Auto-rotate every 4 seconds
-      },
-      grabCursor: true,
-    });
-  </script>
+  // Check if the user is on a mobile device
+  var isMobile = /iPhone|iPad|iPod|Android|webOS|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+
+  // Set the initial slidesPerView value
+  var initialSlidesPerView = isMobile ? 1 : 2;
+
+  // Initialize Swiper with the appropriate configuration
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: initialSlidesPerView,
+    spaceBetween: 20,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 16000, // Auto-rotate every 4 seconds
+    },
+    grabCursor: true,
+  });
+</script>
+
   
   
 
